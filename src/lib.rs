@@ -137,3 +137,11 @@ impl actix_web::ResponseError for Error {
         }))
     }
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_fail() {
+        assert!(false);
+    }
+}
